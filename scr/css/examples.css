@@ -1,0 +1,574 @@
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+/*  */
+
+
+body{
+    background: #010001;
+}
+#preloader {
+	z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+ /* Video Section */
+ #myVideo{
+	position: absolute;
+	z-index: 4;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	 background-color: #010001; /* in case the video doesn't fit the whole page*/
+	
+	  background-position: center center;
+	  background-size: contain;
+	   object-fit: cover; /*cover video background */
+}
+
+.video_section{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* Fonts */
+@font-face {
+    font-family: "FinalSix_Book";
+    src: url("../fonts/FinalSix_Book.ttf");
+   }
+   @font-face {
+    font-family: "FinalSix_Bold";
+    src: url("../fonts/FinalSix_Bold.ttf");
+   }
+
+.mob{
+    display: none;
+}
+h1{
+    font-family: "FinalSix_Bold";
+    font-size: 55px;
+    color: white;
+}
+h2{
+    font-family: "FinalSix_Bold";
+    font-size: 40px;
+    color: white;
+}
+p{
+    font-family: "FinalSix_Book";
+    font-size: 20px;
+    color: white;
+}
+.container{
+    position: relative;
+    z-index: 999;
+}
+.row{
+   align-items: center;
+}
+.section h1{
+    margin-bottom: 8px;
+}
+
+/* NAV BAR */
+.nav-link{
+    color: white;
+    font-size: 18px;
+    font-family: "FinalSix_Book";
+    margin-left: 18px;
+}
+.nav-link:hover{
+    color: #ff6620;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+.navbar-toggler-icon {
+
+    background-image: url("../img/nav.svg");
+
+}
+.pp-tooltip{
+    font-family: "FinalSix_Book" !important;
+
+}
+#pp-nav span{
+    border-color: white !important;
+
+}
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background: #ff6620;
+    border-color: #ff6620 !important;
+}
+.left_text{
+    text-align: left;
+}
+.right_text{
+    text-align: right;
+}
+.center_text{
+    text-align: center;
+}
+.up_white{
+    color: white;
+    text-transform: uppercase;
+}
+.white{
+    color: white;
+}
+.red{
+    color: #FF6620;
+}
+
+
+/* Lottio one anim*/
+.t_lot{
+    display: none;
+}
+
+/* Кнопки */
+.btn{
+    width: 350px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "FinalSix_Bold";
+    font-size: 24px;
+    background-color: #101010;
+    border-radius: 16px;
+    cursor: pointer;
+    /*  */
+}
+
+.btn_sec1{
+    
+    color: white;
+    border: 3px solid #FF6620;  
+}
+
+
+.btn_sec2{
+
+    color: #FF6620;
+    border: 3px solid #FF6620;  
+    font-size: 24px;
+    margin-top: 36px;
+}
+
+.btn_sec1:hover{
+    background-color: #FF6620;
+    color: #101010;
+}
+.btn_sec1:hover .btn_one_img{
+    background: url("../img/btn_one_hover.svg");
+}
+.btn_one_img{
+    width: 17px;
+    height: 17px;
+    background: url("../img/btn_one.svg");
+    margin-left: 24px;
+}
+.btn_sec2:hover{
+    color:#010001;
+    background: #FF6620;
+}
+
+/* Sections */
+#section1{
+
+}
+#section2{
+    
+}
+#section3{
+   margin-top: 40px; 
+}
+#section4{
+    
+}
+#section5{
+    
+}
+#section6{
+   margin-top: 40px; 
+}
+#section7{
+    margin-top: 80px;
+}
+#section8{
+    margin-top: 80px;
+}
+#section9{
+
+}
+#section10{
+    
+    padding-top: 80px;
+}
+
+
+#contacts{
+    margin-top: 40px; 
+}
+
+/* Section 1 */
+.p_sec1{
+    margin-bottom: 8px;
+}
+.h2_sec1{
+    margin-bottom: 36px;
+}
+.p_l_sec1{
+    margin-top: 85px;
+}
+
+/* Section 5 */
+#section4 h2{
+    text-align: center;
+}
+
+
+/* Section 7 */
+.row_v_item{
+    margin-top: 64px;
+}
+.values_item{
+    width: 100%;
+    height: 450px;
+    padding: 16px;
+    border: 2px solid #FF6620;
+    border-radius: 9px;
+    
+}
+.values_item div:nth-child(1){
+   
+    display: flex;
+    justify-content: space-between;
+    
+}
+.values_item p{
+margin-top: 50px;
+}
+.values_item h2{
+    position: relative;
+    top: -4px;
+    }
+.values_item_title{
+    margin-top: 24px;
+    display: flex;
+    align-items: baseline;
+}
+
+.values_item:hover{
+    background: #FF6620; 
+}
+.values_item:hover h2{
+    color: #010001;
+}
+.values_item:hover p{
+    color: #010001;
+}
+.values_item:hover svg{
+    fill: #010001;
+}
+.svg_img svg{
+    fill: #FF6620;
+}
+
+/* section9 */
+
+#section9{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.sec9_vid{
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+#section9 .btn_sec1{
+    margin: 0 auto;
+}
+
+
+/* section10 */
+
+
+.app_item{
+    margin-bottom: 180px;
+}
+.app_img{
+    width: 100%;
+    margin-top: 30px;
+}
+#section10 .row{
+    align-items: flex-start;
+}
+.apps_item2{
+    margin-top: 75%;
+}
+/* section11 */
+#section11{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.teamlogo{
+    width: 250px;
+}
+
+/* section12 */
+#section12 .row{
+    margin-bottom: 32px;
+}
+
+/* Contact page */
+#contacts_page
+{
+    margin-top: 200PX;
+}
+#contacts_page .con_data a:first-child{
+    margin-bottom: 32px;
+}
+
+#contacts_page .con_data_item{
+    margin-bottom: 32px;
+}
+/* Contacts */
+
+
+.con_data,.con_data_item{
+    display: flex;
+    align-items: center;
+
+}
+.con_data{
+    margin-top: 32px;
+    display: flex;
+
+}
+.con_data div{
+    margin-right: 40px;
+}
+.con_data a:first-child{
+    margin-bottom: 36px;
+}
+.con_data_item{
+    padding: 10px;
+   
+}
+.con_data_item img:first-child{
+    margin-right: 16px;
+}
+
+.con_data_item:hover{
+   
+    border-radius: 5px;
+    background: #FF6620;
+}
+
+
+/* footer */
+#footer{
+    border-top: 3px solid #171717;
+}
+.footer_pp{
+    margin-top: 48px;
+}
+.footer_text{
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+#footer a{
+
+    font-size: 18px;
+    color: white;
+    font-family: "FinalSix_Book";
+}
+#footer p{
+
+    font-size: 11px;
+    color: #383838;
+    font-family: "FinalSix_Book";
+}
+
+
+
+
+
+
+
+
+/* Адаптация */
+@media (max-width:480px) {
+    .mob{
+        display: block;
+    }
+    .des{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2 {
+      
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }
+    #pp-nav.right {
+        right: 0;
+    }
+
+    .btn_sec1{
+        width: 100%;
+    }
+    br{
+        display: none;
+    }
+    /* section1 */
+    .p_sec1 {
+       text-align: center;
+    }
+    .h2_sec1 {
+        text-align: center;
+    }
+    .p_l_sec1 {
+        text-align: center;
+        
+    }
+
+    /* section6 */
+    #section6 img{
+        width: 100%;
+    }
+    /* section7 */
+    .values_item {
+        height: 340px;
+        margin-bottom: 16px;
+    }
+
+    /* section8 */
+
+    #section8 {
+        margin-top: 32px;
+    }
+    /*section10  */
+    #section10 {
+        padding-top: 100px;
+    }
+
+    .app_item {
+        margin-bottom: 32px;
+    }
+    .apps_item2 {
+        margin-top: 0px;
+    }
+/* section12 */
+
+#section12 img{
+    width: 100%;
+}
+/* contacts */
+#contacts .con_data {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+#contacts .con_data div {
+    margin-right: 0px;
+}
+#contacts .con_data a:first-child {
+    margin-bottom: 0px;
+}
+#contacts .con_data div:last-child{
+    display: flex;
+    margin-right: 0px;
+    
+}
+/* Contacts page */
+#contacts_page {
+    margin-top: 90PX;
+}
+#contacts_page .con_data a:first-child {
+    margin-bottom: 16px;
+}
+/* Footer */
+#footer{
+    text-align: center;
+}
+#footer p {
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
